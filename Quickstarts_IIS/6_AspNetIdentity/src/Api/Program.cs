@@ -18,6 +18,9 @@ namespace Api
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                // Required for hosting under IIS
+                .UseIIS()
+                //.UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
     }

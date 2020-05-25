@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Local repository
+/Quickstarts_IIS/6_AspNetIdentity/src/Api/web.config
+/Quickstarts_IIS/6_AspNetIdentity/src/IdentityServerAspNetIdentity/web.config
+/Quickstarts_IIS/6_AspNetIdentity/src/JavaScriptClient/web.config
+/Quickstarts_IIS/6_AspNetIdentity/src/MvcClient/web.config
