@@ -15,7 +15,7 @@ namespace Api
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
-                    options.Authority = "https://localhost.area52.local/IdentityServer4";
+                    options.Authority = "https://moonbrook.area52.local/IdentityServer4";
                     options.RequireHttpsMetadata = false;
 
                     options.Audience = "api1";
@@ -26,7 +26,7 @@ namespace Api
                 // this defines a CORS policy called "default"
                 options.AddPolicy("default", policy =>
                 {
-                    policy.WithOrigins("https://localhost.area52.local/IdentityServer4JSClient")
+                    policy.WithOrigins("https://moonbrook.area52.local/IdentityServer4JSClient")
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 });

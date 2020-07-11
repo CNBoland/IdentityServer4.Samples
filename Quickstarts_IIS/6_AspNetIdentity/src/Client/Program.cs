@@ -16,7 +16,7 @@ namespace Client
             // discover endpoints from metadata
             var client = new HttpClient();
 
-            var disco = await client.GetDiscoveryDocumentAsync("https://localhost.area52.local/IdentityServer4");
+            var disco = await client.GetDiscoveryDocumentAsync("https://moonbrook.area52.local/IdentityServer4");
             if (disco.IsError)
             {
                 Console.WriteLine(disco.Error);
@@ -46,7 +46,7 @@ namespace Client
             var apiClient = new HttpClient();
             apiClient.SetBearerToken(tokenResponse.AccessToken);
 
-            var response = await apiClient.GetAsync("https://localhost.area52.local/IdentityServer4Api/identity");
+            var response = await apiClient.GetAsync("https://moonbrook.area52.local/IdentityServer4Api/identity");
             if (!response.IsSuccessStatusCode)
             {
                 Console.WriteLine(response.StatusCode);

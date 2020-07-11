@@ -58,7 +58,7 @@ namespace IdentityServerAspNetIdentity
                     options.Events.RaiseSuccessEvents = true;
 
                     // Appears to be required for 'reverse proxy' configuration under IIS
-                    options.IssuerUri = "https://localhost.area52.local/IdentityServer4";
+                    options.IssuerUri = "https://moonbrook.area52.local/IdentityServer4";
                 })
                 .AddInMemoryIdentityResources(Config.Ids)
                 .AddInMemoryApiResources(Config.Apis)

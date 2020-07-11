@@ -19,12 +19,12 @@ document.getElementById("api").addEventListener("click", api, false);
 document.getElementById("logout").addEventListener("click", logout, false);
 
 var config = {
-    authority: "https://localhost.area52.local/IdentityServer4",
+    authority: "https://moonbrook.area52.local/IdentityServer4",
     client_id: "js",
-    redirect_uri: "https://localhost.area52.local/IdentityServer4JSClient/callback.html",
+    redirect_uri: "https://moonbrook.area52.local/IdentityServer4JSClient/callback.html",
     response_type: "code",
     scope: "openid profile api1",
-    post_logout_redirect_uri: "https://localhost.area52.local/IdentityServer4JSClient/index.html",
+    post_logout_redirect_uri: "https://moonbrook.area52.local/IdentityServer4JSClient/index.html",
 };
 var mgr = new Oidc.UserManager(config);
 
@@ -43,7 +43,7 @@ function login() {
 
 function api() {
     mgr.getUser().then(function (user) {
-        var url = "https://localhost.area52.local/IdentityServer4Api/identity";
+        var url = "https://moonbrook.area52.local/IdentityServer4Api/identity";
 
         var xhr = new XMLHttpRequest();
         xhr.open("GET", url);

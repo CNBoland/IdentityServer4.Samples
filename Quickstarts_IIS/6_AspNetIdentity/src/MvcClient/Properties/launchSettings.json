@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "https://localhost.area52.local/IdentityServer4MvcClient",
+      "applicationUrl": "https://moonbrook.area52.local/IdentityServer4MvcClient",
       "sslPort": 0
     },
     "iisExpress": {

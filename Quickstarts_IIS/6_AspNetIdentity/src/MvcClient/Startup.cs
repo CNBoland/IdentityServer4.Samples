@@ -22,7 +22,7 @@ namespace MvcClient
                 .AddCookie("Cookies")
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "https://localhost.area52.local/IdentityServer4";
+                    options.Authority = "https://moonbrook.area52.local/IdentityServer4";
                     options.RequireHttpsMetadata = false;
 
                     options.ClientId = "mvc";

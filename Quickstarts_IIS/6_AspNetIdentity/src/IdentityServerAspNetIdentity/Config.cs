@@ -48,10 +48,10 @@ namespace IdentityServerAspNetIdentity
                     RequirePkce = true,
                 
                     // where to redirect to after login
-                    RedirectUris = { "https://localhost.area52.local/IdentityServer4MvcClient/signin-oidc" },
+                    RedirectUris = { "https://moonbrook.area52.local/IdentityServer4MvcClient/signin-oidc" },
 
                     // where to redirect to after logout
-                    PostLogoutRedirectUris = { "https://localhost.area52.local/IdentityServer4MvcClient/signout-callback-oidc" },
+                    PostLogoutRedirectUris = { "https://moonbrook.area52.local/IdentityServer4MvcClient/signout-callback-oidc" },
 
                     AllowedScopes = new List<string>
                     {
@@ -71,9 +71,9 @@ namespace IdentityServerAspNetIdentity
                     RequirePkce = true,
                     RequireClientSecret = false,
 
-                    RedirectUris =           { "https://localhost.area52.local/IdentityServer4JSClient/callback.html" },
-                    PostLogoutRedirectUris = { "https://localhost.area52.local/IdentityServer4JSClient/index.html" },
-                    AllowedCorsOrigins =     { "https://localhost.area52.local" },
+                    RedirectUris =           { "https://moonbrook.area52.local/IdentityServer4JSClient/callback.html" },
+                    PostLogoutRedirectUris = { "https://moonbrook.area52.local/IdentityServer4JSClient/index.html" },
+                    AllowedCorsOrigins =     { "https://moonbrook" },
 
                     AllowedScopes =
                     {
@@ -81,6 +81,31 @@ namespace IdentityServerAspNetIdentity
                         IdentityServerConstants.StandardScopes.Profile,
                         "api1"
                     }
+                },
+                // interactive Xamarin Forms client
+                new Client
+                {
+                    ClientId = "interactive.public",
+                    RequireClientSecret = false,
+
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RequireConsent = true,
+                    RequirePkce = true,
+                
+                    // where to redirect to after login
+                    RedirectUris = { "xamarinformsclients://callback" },
+
+                    //// where to redirect to after logout
+                    //PostLogoutRedirectUris = { "https://moonbrook.area52.local/IdentityServer4MvcClient/signout-callback-oidc" },
+
+                    AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api1"
+                    },
+
+                    AllowOfflineAccess = true
                 }
             };
     }
