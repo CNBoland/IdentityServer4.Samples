@@ -31,7 +31,7 @@ namespace XamarinFormsClient.Core
             {
                 Authority = "https://moonbrook.area52.local/IdentityServer4",
                 ClientId = "interactive.public",
-                Scope = "openid profile api1 offline_access",
+                Scope = "openid profile api1",
                 RedirectUri = "xamarinformsclients://callback",
                 Browser = browser,
 
