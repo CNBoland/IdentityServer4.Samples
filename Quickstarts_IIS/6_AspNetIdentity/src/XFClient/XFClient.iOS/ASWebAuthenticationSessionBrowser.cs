@@ -39,7 +39,7 @@ namespace XamarinFormsClient.iOS
 
                 _asWebAuthenticationSession.Start();
             }
-            catch (Exception ex)
+            catch (Exception /*ex*/)
             {
                 throw;
             }

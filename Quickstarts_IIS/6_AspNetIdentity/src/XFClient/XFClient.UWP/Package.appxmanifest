@@ -8,14 +8,14 @@
 
   <Identity
     Name="273d90db-50b5-404c-ba6b-0bebdcf4932b"
-    Publisher="CN=Craig"
+    Publisher="CN=Craig Boland"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="273d90db-50b5-404c-ba6b-0bebdcf4932b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>XamarinFormsClient.UWP</DisplayName>
-    <PublisherDisplayName>jasdeb</PublisherDisplayName>
+    <PublisherDisplayName>Craig Boland</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
